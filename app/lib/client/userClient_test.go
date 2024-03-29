@@ -10,7 +10,7 @@ import (
 )
 
 func TestGetCode(t *testing.T) {
-	err := config.ConfigInit("../../config/config.toml")
+	err := config.ConfigInit("../../../config/config.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -26,7 +26,7 @@ func TestGetCode(t *testing.T) {
 		panic(err)
 	}
 	userDao := dao.NewUserDao()
-	user, err := userDao.GetUserByMobile("13868449322")
+	user, err := userDao.GetUserByMobile("")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -42,7 +42,7 @@ func TestGetCode(t *testing.T) {
 }
 
 func TestLogIn(t *testing.T) {
-	err := config.ConfigInit("../../config/config.toml")
+	err := config.ConfigInit("../../../config/config.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -53,13 +53,13 @@ func TestLogIn(t *testing.T) {
 		panic(err)
 	}
 	userDao := dao.NewUserDao()
-	user, err := userDao.GetUserByMobile("13868449322")
+	user, err := userDao.GetUserByMobile("")
 	if err != nil {
 		t.Error(err)
 		panic(err)
 	}
 	client := NewUserClient()
-	err = client.PostLogIn(user, "611699")
+	err = client.PostLogIn(user, "")
 	if err != nil {
 		t.Error(err)
 		panic(err)

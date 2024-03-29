@@ -26,7 +26,7 @@ func TestGetShopsByProvince(t *testing.T) {
 	}
 	client := NewShopClient()
 	//初始化配置
-	shopsId, err := client.GetShopsByProvince("天津市", "2478")
+	shopsId, err := client.GetShopsByProvince("", "")
 	if err != nil {
 		t.Error(err)
 		panic(err)

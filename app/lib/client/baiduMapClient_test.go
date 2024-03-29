@@ -10,7 +10,7 @@ func TestParseIp(t *testing.T) {
 	config.ConfigInit("../../../config/config.toml")
 	client := NewBaiduMapClient()
 	//初始化配置
-	resp, err := client.ParseIPToLngAndLat("111.206.214.37")
+	resp, err := client.ParseIPToLngAndLat("")
 	fmt.Printf("%#v", resp)
 	if err != nil {
 		t.Error(err)
@@ -20,7 +20,7 @@ func TestParseAddress(t *testing.T) {
 	config.ConfigInit("../../../config/config.toml")
 	client := NewBaiduMapClient()
 	//初始化配置
-	resp, err := client.ParseAddressToLngAndLat("北京市")
+	resp, err := client.ParseAddressToLngAndLat("")
 	fmt.Printf("%#v", resp)
 	if err != nil {
 		t.Error(err)
