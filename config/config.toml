@@ -2,12 +2,14 @@
 server_addr = ":8080"
 
 [baidu_map_configure]
-ak = "IJUlFZgaKZUdUqEVtJSi9XkdrZFr3vKk"
+##百度Map AK
+ak = ""
 
 [mysql_configure]
 driver = "mysql"
 user_name = "root"
-pw = "li19980414"
+## 密码
+pw = ""
 host = "127.0.0.1"
 port = "3306"
 dbname = "imaotai"
