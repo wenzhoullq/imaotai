@@ -71,6 +71,7 @@ func TestGetAppointmentResults(t *testing.T) {
 		t.Error(err)
 		panic(err)
 	}
+
 	err = log.InitLog()
 	if err != nil {
 		t.Error(err)
