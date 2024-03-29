@@ -1,0 +1,18 @@
+[server_configure]
+server_addr = ":8080"
+
+[baidu_map_configure]
+ak = "IJUlFZgaKZUdUqEVtJSi9XkdrZFr3vKk"
+
+[mysql_configure]
+driver = "mysql"
+user_name = "zuoxingtao"
+pw = "!Zuoxingtao666"
+host = "127.0.0.1"
+port = "3306"
+dbname = "imaotai"
+timeout = "10s"
+
+[log_configure]
+log_file_path = "../log/"
+log_file_name = "system.log"
