@@ -27,7 +27,7 @@ func InitCronTask() error {
 	if err != nil {
 		return err
 	}
-	err = c.AddFunc("0 40 9 * *", Reservation)
+	err = c.AddFunc("0 1 9 * *", Reservation)
 	if err != nil {
 		return err
 	}

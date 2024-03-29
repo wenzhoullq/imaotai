@@ -6,6 +6,7 @@ import (
 	"zuoxingtao/init/common"
 	"zuoxingtao/init/config"
 	"zuoxingtao/init/db"
+	"zuoxingtao/init/log"
 )
 
 func TestGetCode(t *testing.T) {
@@ -65,7 +66,17 @@ func TestLogIn(t *testing.T) {
 	}
 }
 func TestGetAppointmentResults(t *testing.T) {
-	err := config.ConfigInit("../../config/config.toml")
+	err := config.ConfigInit("../../../config/config.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	err = log.InitLog()
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	err = common.CommonInit()
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -76,12 +87,7 @@ func TestGetAppointmentResults(t *testing.T) {
 		panic(err)
 	}
 	userDao := dao.NewUserDao()
-	user, err := userDao.GetUserByMobile("13868449322")
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = common.CommonInit()
+	user, err := userDao.GetUserByMobile("")
 	if err != nil {
 		t.Error(err)
 		panic(err)

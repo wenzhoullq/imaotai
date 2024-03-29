@@ -204,7 +204,6 @@ func (uc *UserClient) GetAppointmentRecord(user *user.User) (*response.RecordRes
 	if err != nil {
 		return nil, err
 	}
-	lib.WriteToTxt(resp.Body())
 	recordResp := &response.RecordResp{}
 	err = json.Unmarshal(resp.Body(), recordResp)
 	if err != nil {

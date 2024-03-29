@@ -1,6 +1,7 @@
 package dao
 
 import (
+	"fmt"
 	"github.com/jinzhu/gorm"
 	"zuoxingtao/dto/user"
 	"zuoxingtao/init/db"
@@ -31,6 +32,7 @@ func (ud *UserDao) GetUsersByStatus(status int) ([]*user.User, error) {
 
 func (ud *UserDao) GetUserByMobile(mobile string) (*user.User, error) {
 	user := &user.User{}
+	fmt.Println(ud.DB)
 	if err := ud.Table(user.TableName()).Where("mobile = ?", mobile).Find(user).Error; err != nil {
 		return nil, err
 	}

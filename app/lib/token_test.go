@@ -3,6 +3,4 @@ package lib
 import "testing"
 
 func TestParseToken(t *testing.T) {
-	ParseToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtdCIsImV4cCI6MTcxNDE5NjI5NSwidXNlcklkIjoxMTA5MTgxNTk2LCJkZXZpY2VJZCI6ImNsaXBzX0xCVndTWHBDSTBZaUczOUxmUndwR0MwZGYwMHBTM05FY1VSeEVDUVJjaFE9IiwiaWF0IjoxNzExNjA0Mjk1fQ.h8vaaDM6ms-XrhaEJoWTBbH-wHKv4rzNKffGud8nOjQ")
-	//ParseToken("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkJhZWxkdW5nIFVzZXIiLCJpYXQiOjE1MTYyMzkwMjJ9.qH7Zj_m3kY69kxhaQXTa-ivIpytKXXjZc1ZSmapZnGE")
 }

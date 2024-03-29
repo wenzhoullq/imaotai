@@ -84,7 +84,6 @@ func (sm *ShopModel) UpdateShop() {
 			continue
 		}
 		v.Status = constant.SHOP_OPEN
-		//lib.WriteToTxt(fmt.)
 		err = sm.ShopDao.UpdateShop(v)
 		if err != nil {
 			failTask++
