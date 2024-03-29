@@ -55,6 +55,7 @@ func TestAddRecord(t *testing.T) {
 		t.Error(err)
 		panic(err)
 	}
+
 	err = config.ConfigInit("../../../config/config.toml")
 	if err != nil {
 		t.Error(err)
