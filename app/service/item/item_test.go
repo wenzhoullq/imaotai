@@ -14,7 +14,7 @@ func TestUpdateItems(t *testing.T) {
 		t.Error(err)
 		panic(err)
 	}
-	err = config.ConfigInit("../../../config/config.toml")
+	err = config.ConfigInit("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)

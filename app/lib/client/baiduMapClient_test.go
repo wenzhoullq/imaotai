@@ -7,7 +7,7 @@ import (
 )
 
 func TestParseIp(t *testing.T) {
-	config.ConfigInit("../../../config/config.toml")
+	config.ConfigInit("../../../config/configTest.toml")
 	client := NewBaiduMapClient()
 	//初始化配置
 	resp, err := client.ParseIPToLngAndLat("")
@@ -17,7 +17,7 @@ func TestParseIp(t *testing.T) {
 	}
 }
 func TestParseAddress(t *testing.T) {
-	config.ConfigInit("../../../config/config.toml")
+	config.ConfigInit("../../../config/configTest.toml")
 	client := NewBaiduMapClient()
 	//初始化配置
 	resp, err := client.ParseAddressToLngAndLat("")

@@ -23,7 +23,7 @@ func CommonInit() error {
 	return nil
 }
 
-func CommonUpdate() {
+func UpdateCommon() {
 	commonClient := NewCommonClient()
 	version, err := commonClient.GetMTVersion()
 	if err != nil {

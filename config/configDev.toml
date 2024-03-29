@@ -19,3 +19,11 @@ timeout = "10s"
 [log_configure]
 log_file_path = "../log/"
 log_file_name = "system.log"
+
+[corn_task_configure]
+update_shop = "0 0 8 * *"
+update_item = "0 10 8 * *"
+ex_user = "0 20 8 * *"
+update_common = "0 30 8 * *"
+reservation = "0 1 9 * *"
+add_record = "0 0 18 * *"

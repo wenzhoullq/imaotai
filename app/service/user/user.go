@@ -30,7 +30,6 @@ type UserModel struct {
 	*client.UserClient
 	*client.BaiduMapClient
 	*client.ShopClient
-	MtVersion string
 }
 
 func SetLog() func(model *UserModel) {
@@ -48,7 +47,6 @@ func NewUserModel(ops ...func(model *UserModel)) *UserModel {
 		ItemDao:        dao.NewItemDao(),
 		ShopDao:        dao.NewShopDao(),
 		RecordDao:      dao.NewRecordDao(),
-		MtVersion:      common.MtVersion,
 	}
 	for _, op := range ops {
 		op(um)
@@ -363,7 +361,7 @@ func (um *UserModel) parseRecord(user *u.User, resp *response.RecordResp) []*rec
 			UserID:   user.UserID,
 			UserName: user.UserName,
 			ItemName: v.ItemName,
-			ItemID:   v.ItemId,
+			ItemID:   v.ItemID,
 		}
 		records = append(records, record)
 	}

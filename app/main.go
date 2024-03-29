@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	l "log"
 	"net/http"
 	"os"
@@ -17,7 +16,7 @@ func main() {
 	var err error
 	switch os.Getenv("ENV") {
 	case "test":
-		err = config.ConfigInit("../config/config.toml")
+		err = config.ConfigInit("../config/configTest.toml")
 		break
 	case "dev":
 		err = config.ConfigInit("../config/configDev.toml")
@@ -31,7 +30,6 @@ func main() {
 	}
 	err = log.InitLog()
 	if err != nil {
-		fmt.Println(err)
 		panic(err)
 	}
 	err = db.InitDB()

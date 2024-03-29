@@ -97,7 +97,7 @@ type RecordResp struct {
 	Data struct {
 		ReservationItemVOS []struct {
 			Status   int    `json:"status"`
-			ItemId   string `json:"itemId"`
+			ItemID   string `json:"itemId"`
 			ItemName string `json:"itemName"`
 		} `json:"reservationItemVOS"`
 	} `json:"data"`

@@ -10,7 +10,7 @@ import (
 )
 
 func TestGetCode(t *testing.T) {
-	err := config.ConfigInit("../../../config/config.toml")
+	err := config.ConfigInit("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -42,7 +42,7 @@ func TestGetCode(t *testing.T) {
 }
 
 func TestLogIn(t *testing.T) {
-	err := config.ConfigInit("../../../config/config.toml")
+	err := config.ConfigInit("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -66,7 +66,7 @@ func TestLogIn(t *testing.T) {
 	}
 }
 func TestGetAppointmentResults(t *testing.T) {
-	err := config.ConfigInit("../../../config/config.toml")
+	err := config.ConfigInit("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)

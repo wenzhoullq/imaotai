@@ -5,6 +5,7 @@ type Configuration struct {
 	BaiduMapConfigure `toml:"baidu_map_configure"`
 	MysqlConfigure    `toml:"mysql_configure"`
 	LogConfigure      `toml:"log_configure"`
+	CronTaskConfigure `toml:"corn_task_configure"`
 }
 
 type LogConfigure struct {
@@ -28,4 +29,13 @@ type MysqlConfigure struct {
 	Port     string `toml:"port"`
 	DbName   string `toml:"dbname"`
 	TimeOut  string `toml:"timeout"`
+}
+
+type CronTaskConfigure struct {
+	UpdateShop   string `toml:"update_shop"`
+	UpdateItem   string `toml:"update_item"`
+	ExUser       string `toml:"ex_user"`
+	UpdateCommon string `toml:"update_common"`
+	Reservation  string `toml:"reservation"`
+	AddRecord    string `toml:"add_record"`
 }

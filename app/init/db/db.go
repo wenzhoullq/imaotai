@@ -4,6 +4,10 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"zuoxingtao/dto/item"
+	"zuoxingtao/dto/record"
+	"zuoxingtao/dto/shop"
+	"zuoxingtao/dto/user"
 	"zuoxingtao/init/config"
 	"zuoxingtao/init/log"
 )
@@ -20,6 +24,7 @@ func InitDB() (err error) {
 	if err != nil {
 		return err
 	}
+	DB.AutoMigrate(&item.Item{}, &user.User{}, &record.Record{}, &shop.Shop{})
 	DB.SetLogger(log.Logger)
 	DB.LogMode(true)
 	return nil

@@ -1,27 +1,30 @@
 package user
 
 import (
+	"time"
 	"zuoxingtao/constant"
 	"zuoxingtao/lib"
 )
 
 type User struct {
-	ID           int     `json:"id" gorm:"id"`
-	Status       int     `json:"status" gorm:"status"`
-	Deleted      int     `json:"deleted" gorm:"deleted"`
-	Mobile       string  `json:"mobile" gorm:"mobile"`
-	Md5          string  `json:"md5" gorm:"md5"`
-	DeviceID     string  `json:"device_id" gorm:"device_id"`
-	Token        string  `json:"token" gorm:"token"`
-	Lat          float64 `json:"lat" gorm:"lat"`
-	Lng          float64 `json:"lng" gorm:"lng"`
-	CityName     string  `json:"city_name" gorm:"city_name"`
-	UserID       int     `json:"user_id" gorm:"user_id"`
-	Source       int     `json:"source" gorm:"source"`
-	UserName     string  `json:"user_name" gorm:"user_name"`
-	ProvinceName string  `json:"province_name" gorm:"province_name"`
-	DistrictName string  `json:"district_name" gorm:"district_name"`
-	Cookie       string  `json:"cookie" gorm:"cookie"`
+	Id           int       `gorm:"column:id;primary_key;AUTO_INCREMENT" json:"id"`                           // 自增ID
+	Mobile       string    `gorm:"column:mobile;NOT NULL" json:"mobile"`                                     // 手机号
+	Status       int       `gorm:"column:status;default:0;NOT NULL" json:"status"`                           // 状态
+	Deleted      int       `gorm:"column:deleted;default:0;NOT NULL" json:"deleted"`                         // 是否删除
+	CreateTime   time.Time `gorm:"column:create_time;default:CURRENT_TIMESTAMP;NOT NULL" json:"create_time"` // 创建时间
+	UpdateTime   time.Time `gorm:"column:update_time;default:CURRENT_TIMESTAMP;NOT NULL" json:"update_time"` // 修改时间
+	Md5          string    `gorm:"column:md5" json:"md5"`                                                    // md5
+	DeviceID     string    `gorm:"column:device_id" json:"device_id"`                                        // 设备名称
+	Token        string    `gorm:"column:token" json:"token"`
+	Lat          float64   `gorm:"column:lat" json:"lat"`
+	Lng          float64   `gorm:"column:lng" json:"lng"`
+	CityName     string    `gorm:"column:city_name" json:"city_name"`
+	UserID       int       `gorm:"column:user_id" json:"user_id"`
+	Source       int       `gorm:"column:source" json:"source"`
+	UserName     string    `gorm:"column:user_name" json:"user_name"`
+	ProvinceName string    `gorm:"column:province_name" json:"province_name"`
+	DistrictName string    `gorm:"column:district_name" json:"district_name"`
+	Cookie       string    `gorm:"column:cookie" json:"cookie"`
 }
 
 func (user *User) TableName() string {

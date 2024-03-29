@@ -3,6 +3,7 @@ package cron
 import (
 	"github.com/robfig/cron"
 	"zuoxingtao/init/common"
+	"zuoxingtao/init/config"
 	"zuoxingtao/service/item"
 	"zuoxingtao/service/shop"
 	"zuoxingtao/service/user"
@@ -10,28 +11,28 @@ import (
 
 func InitCronTask() error {
 	c := cron.New()
-	err := c.AddFunc("0 0 8 * *", UpdateShop)
+	err := c.AddFunc(config.Config.UpdateShop, UpdateShop)
 	if err != nil {
 		return err
 	}
-	err = c.AddFunc("0 10 8 * *", UpdateItem)
+	err = c.AddFunc(config.Config.UpdateItem, UpdateItem)
 	//err = c.AddFunc("*/1 * * * *", UpdateItem)
 	if err != nil {
 		return err
 	}
-	err = c.AddFunc("0 20 8 * *", ExUser)
+	err = c.AddFunc(config.Config.ExUser, ExUser)
 	if err != nil {
 		return err
 	}
-	err = c.AddFunc("0 30 8 * *", common.CommonUpdate)
+	err = c.AddFunc(config.Config.UpdateCommon, common.UpdateCommon)
 	if err != nil {
 		return err
 	}
-	err = c.AddFunc("0 1 9 * *", Reservation)
+	err = c.AddFunc(config.Config.Reservation, Reservation)
 	if err != nil {
 		return err
 	}
-	err = c.AddFunc("0 0 18 * *", AddRecord)
+	err = c.AddFunc(config.Config.AddRecord, AddRecord)
 	if err != nil {
 		return err
 	}
