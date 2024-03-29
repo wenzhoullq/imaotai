@@ -2,6 +2,7 @@ package cron
 
 import (
 	"github.com/robfig/cron"
+	"github.com/sirupsen/logrus"
 	"zuoxingtao/init/common"
 	"zuoxingtao/init/config"
 	"zuoxingtao/service/item"
@@ -42,25 +43,40 @@ func InitCronTask() error {
 
 func UpdateShop() {
 	sm := shop.NewShopModel(shop.SetLog())
-	sm.UpdateShop()
+	err := sm.UpdateShop()
+	if err != nil {
+		sm.Logln(logrus.ErrorLevel, err.Error())
+	}
 }
 func UpdateItem() {
 	im := item.NewItemModel(item.SetLog())
-	im.UpdateItems()
+	err := im.UpdateItems()
+	if err != nil {
+		im.Logln(logrus.ErrorLevel, err.Error())
+	}
 }
 
 // 过期的用户改变状态
 func ExUser() {
 	um := user.NewUserModel(user.SetLog())
-	um.ExpUser()
+	err := um.ExpUser()
+	if err != nil {
+		um.Logln(logrus.ErrorLevel, err.Error())
+	}
 }
 
 func Reservation() {
 	um := user.NewUserModel(user.SetLog())
-	um.Reservation()
+	err := um.Reservation()
+	if err != nil {
+		um.Logln(logrus.ErrorLevel, err.Error())
+	}
 }
 
 func AddRecord() {
 	um := user.NewUserModel(user.SetLog())
-	um.AddRecord()
+	err := um.AddRecord()
+	if err != nil {
+		um.Logln(logrus.ErrorLevel, err.Error())
+	}
 }

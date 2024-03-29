@@ -44,26 +44,23 @@ func (sm *ShopModel) ParseShopJson(jsonStr []byte) (map[string]*shop.Shop, error
 	return shopMap, nil
 }
 
-func (sm *ShopModel) UpdateShop() {
+func (sm *ShopModel) UpdateShop() error {
 	url, err := sm.GetShopListUrl()
 	if err != nil {
-		return
+		return err
 	}
 	jsonStr, err := sm.GetShopList(url)
 	if err != nil {
-		sm.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	shopMap, err := sm.ParseShopJson(jsonStr)
 	if err != nil {
-		sm.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	// 先将所有店铺关闭
 	err = sm.CloseAllShop()
 	if err != nil {
-		sm.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	// 批量更新Shop信息
 	failTask := 0
@@ -92,5 +89,5 @@ func (sm *ShopModel) UpdateShop() {
 		}
 	}
 	sm.Logln(logrus.InfoLevel, "fail shop Update/Create time  is ", failTask)
-	return
+	return nil
 }

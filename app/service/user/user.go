@@ -144,20 +144,17 @@ func (um *UserModel) LogIn(c *gin.Context, req *requset.LoginRequest) (*lib.Resp
 	return resp, nil
 }
 
-func (um *UserModel) Reservation() {
+func (um *UserModel) Reservation() error {
 	users, err := um.GetUsersByStatus(constant.USER_NORMAL)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	items, err := um.GetItemByStatus(constant.ITEM_OPEN)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	// 过滤掉不想要的酒
 	items = um.FilterItem(items)
@@ -182,7 +179,7 @@ func (um *UserModel) Reservation() {
 			}
 		}
 	}
-	return
+	return nil
 }
 func (um *UserModel) GetMinDistanceShop(user *u.User, shopIDs []string) (string, error) {
 	var shopID string
@@ -271,11 +268,10 @@ func (um *UserModel) setAddress(user *u.User, address string) error {
 	return nil
 }
 
-func (um *UserModel) ExpUser() {
+func (um *UserModel) ExpUser() error {
 	users, err := um.GetUsersByStatus(constant.USER_NORMAL)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	expNum := 0
 	for _, u := range users {
@@ -303,6 +299,7 @@ func (um *UserModel) ExpUser() {
 		}
 	}
 	um.Logln(logrus.InfoLevel, "overDue user num:", expNum)
+	return nil
 }
 
 func (um *UserModel) checkUpdateTokenParams(req *requset.UpdateTokenRequest) error {
@@ -368,11 +365,10 @@ func (um *UserModel) parseRecord(user *u.User, resp *response.RecordResp) []*rec
 	return records
 }
 
-func (um *UserModel) AddRecord() {
+func (um *UserModel) AddRecord() error {
 	users, err := um.GetUsersByStatus(constant.USER_NORMAL)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	for _, u := range users {
 		resp, err := um.GetAppointmentRecord(u)
@@ -390,4 +386,5 @@ func (um *UserModel) AddRecord() {
 			continue
 		}
 	}
+	return nil
 }

@@ -35,17 +35,15 @@ func NewItemModel(ops ...func(model *ItemModel)) *ItemModel {
 	return im
 }
 
-func (im *ItemModel) UpdateItems() {
+func (im *ItemModel) UpdateItems() error {
 	// 先将所有酒关闭
 	items, err := im.GetItemList()
 	if err != nil {
-		im.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	err = im.CloseAllItem()
 	if err != nil {
-		im.Logln(logrus.ErrorLevel, err.Error())
-		return
+		return err
 	}
 	failTask := 0
 	for _, v := range items {
@@ -77,5 +75,5 @@ func (im *ItemModel) UpdateItems() {
 		}
 	}
 	im.Logln(logrus.InfoLevel, "fail item Update/Create time  is ", fmt.Sprintf("%d", failTask))
-	return
+	return nil
 }
