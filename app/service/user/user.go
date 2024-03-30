@@ -30,6 +30,7 @@ type UserModel struct {
 	*client.UserClient
 	*client.BaiduMapClient
 	*client.ShopClient
+	statusMap map[int]string
 }
 
 func SetLog() func(model *UserModel) {
@@ -48,6 +49,13 @@ func NewUserModel(ops ...func(model *UserModel)) *UserModel {
 		ShopDao:        dao.NewShopDao(),
 		RecordDao:      dao.NewRecordDao(),
 	}
+	statusMap := map[int]string{
+		constant.USER_INIT:     constant.USER_NOTEXIST,
+		constant.USER_IDLE:     constant.USER_ADDRESSNULL,
+		constant.USER_NORMAL:   constant.USER_PORCESSING,
+		constant.USER_ABNORMAL: constant.USER_TOKENEX,
+	}
+	um.statusMap = statusMap
 	for _, op := range ops {
 		op(um)
 	}
@@ -66,7 +74,6 @@ func (um *UserModel) VerifyCode(c *gin.Context, req *requset.GetVerifyCodeReq) (
 	resp := lib.NewResponse()
 	err := um.checkVerifyCodeParams(req)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
 		lib.SetResponse(resp, lib.SetErrMsg(err.Error()), lib.SetErrNo(constant.ParamErr))
 		return resp, err
 	}
@@ -77,20 +84,17 @@ func (um *UserModel) VerifyCode(c *gin.Context, req *requset.GetVerifyCodeReq) (
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			err = um.AddUser(user)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err.Error())
 				lib.SetResponse(resp, lib.SetErrMsg(err.Error()), lib.SetErrNo(constant.DBErr))
 				return resp, err
 			}
 			um.Logln(logrus.InfoLevel, "add User Success, user mobile is "+req.Mobile)
 		} else {
-			um.Logln(logrus.ErrorLevel, err.Error())
 			lib.SetResponse(resp, lib.SetErrMsg(err.Error()), lib.SetErrNo(constant.DBErr))
 			return resp, err
 		}
 	}
 	err = um.PostVerify(user)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
 		lib.SetResponse(resp, lib.SetErrMsg(err.Error()), lib.SetErrNo(constant.ClientErr))
 		return resp, err
 	}
@@ -200,7 +204,7 @@ func (um *UserModel) GetMinDistanceShop(user *u.User, shopIDs []string) (string,
 func (um *UserModel) FilterItem(items []*item.Item) []*item.Item {
 	filterItems := make([]*item.Item, 0)
 	for _, v := range items {
-		if v.ItemCode == constant.MT_1935 {
+		if _, ok := common.FilterSet[v.ItemCode]; !ok {
 			continue
 		}
 		filterItems = append(filterItems, v)
@@ -224,19 +228,16 @@ func (um *UserModel) UpdateUserAddress(c *gin.Context, req *requset.UpdateAddres
 	resp := lib.NewResponse()
 	err := um.checkUpdateUserAddressParams(req)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
 		lib.SetResponse(resp, lib.SetErrMsg(err.Error()), lib.SetErrNo(constant.ParamErr))
 		return resp, err
 	}
 	user, err := um.GetUserByMobile(req.Mobile)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
 		lib.SetResponse(resp, lib.SetErrMsg(err.Error()), lib.SetErrNo(constant.DBErr))
 		return resp, err
 	}
 	err = um.setAddress(user, req.Address)
 	if err != nil {
-		um.Logln(logrus.ErrorLevel, err.Error())
 		lib.SetResponse(resp, lib.SetErrMsg(err.Error()), lib.SetErrNo(constant.DBErr))
 		return resp, err
 	}
@@ -386,5 +387,95 @@ func (um *UserModel) AddRecord() error {
 			continue
 		}
 	}
+	return nil
+}
+func (um *UserModel) checkUserStatusParams(req *requset.GetUserStatusReq) error {
+	if !lib.CheckMobileNumber(req.Mobile) {
+		err := errors.New("mobile form is false,mobile is " + req.Mobile)
+		return err
+	}
+	return nil
+}
+func (um *UserModel) GetUserStatus(c *gin.Context, req *requset.GetUserStatusReq) (*lib.Response, error) {
+	resp := lib.NewResponse()
+	statusResp := response.GetUserStatusResp{}
+	if err := um.checkUserStatusParams(req); err != nil {
+		return resp, err
+	}
+	user, err := um.GetUserByMobile(req.Mobile)
+	if err != nil {
+		if errors.Is(err, gorm.ErrRecordNotFound) {
+			user = u.NewUser()
+			user.Status = constant.USER_INIT
+		} else {
+			return resp, err
+		}
+	}
+	statusResp.Status = um.statusMap[user.Status]
+	lib.SetResponse(resp, lib.SetErrNo(constant.Success), lib.SetResults(statusResp))
+	um.Logln(logrus.InfoLevel, " userID :", user.UserID, "userStatus:", user.Status)
+	return resp, nil
+}
+
+func (um *UserModel) TravelReward() error {
+	users, err := um.GetUsersByStatus(constant.USER_NORMAL)
+	if err != nil {
+		return err
+	}
+	for _, u := range users {
+		pageData, err := um.GetUserIsolationPageData(u)
+		if err != nil {
+			um.Logln(logrus.ErrorLevel, err)
+			continue
+		}
+		//现存体力
+		curEnergy := pageData.Data.Energy
+		// 获得体力
+		if pageData.Data.EnergyReward.Value > 0 {
+			err = um.GetEnergyAward(u)
+			if err != nil {
+				um.Logln(logrus.ErrorLevel, err)
+				continue
+			}
+			curEnergy = curEnergy + pageData.Data.EnergyReward.Value
+		}
+		//正在旅行中
+		if pageData.Data.XmTravel.Status == constant.TRAVEL_STATUS_PROCESSING {
+			um.Logln(logrus.InfoLevel, "user ", u.UserID, " is traveling")
+			continue
+		}
+		// 如果旅行结束了,获取小茅运和首次分享获得体力值(该体力值不计入curEnergy,避免逻辑复杂化)
+		if pageData.Data.XmTravel.Status == constant.TRAVEL_STATUS_FINISH {
+			err = um.ReceiveReward(u)
+			if err != nil {
+				um.Logln(logrus.ErrorLevel, err)
+				continue
+			}
+			err = um.ShareReward(u)
+			if err != nil {
+				um.Logln(logrus.ErrorLevel, err)
+				continue
+			}
+		}
+		travelRewardXmy, err := um.GetXmTravelReward(u)
+		if err != nil {
+			um.Logln(logrus.ErrorLevel, err)
+			continue
+		}
+		exchangeRateInfo, err := um.GetExchangeRateInfo(u)
+		if err != nil {
+			um.Logln(logrus.ErrorLevel, err)
+			continue
+		}
+		// 本月小茅运还有余额;今日次数还有;体力值大于一次旅行的消耗量;
+		if exchangeRateInfo >= travelRewardXmy && curEnergy > constant.TRAVEL_CONSUME && pageData.Data.XmTravel.RemainChance > 0 {
+			err := um.StartTravel(u)
+			if err != nil {
+				um.Logln(logrus.ErrorLevel, err)
+				continue
+			}
+		}
+	}
+	um.Logln(logrus.InfoLevel, "get reward Success")
 	return nil
 }

@@ -3,24 +3,10 @@ package client
 import (
 	"testing"
 	"zuoxingtao/dao"
-	"zuoxingtao/init/common"
-	"zuoxingtao/init/config"
-	"zuoxingtao/init/db"
-	"zuoxingtao/init/log"
 )
 
 func TestGetCode(t *testing.T) {
-	err := config.ConfigInit("../../../config/configTest.toml")
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = db.InitDB()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = common.CommonInit()
+	err := initTest("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -42,12 +28,7 @@ func TestGetCode(t *testing.T) {
 }
 
 func TestLogIn(t *testing.T) {
-	err := config.ConfigInit("../../../config/configTest.toml")
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = db.InitDB()
+	err := initTest("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -66,23 +47,7 @@ func TestLogIn(t *testing.T) {
 	}
 }
 func TestGetAppointmentResults(t *testing.T) {
-	err := config.ConfigInit("../../../config/configTest.toml")
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-
-	err = log.InitLog()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = common.CommonInit()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = db.InitDB()
+	err := initTest("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
@@ -100,5 +65,110 @@ func TestGetAppointmentResults(t *testing.T) {
 		t.Error(err)
 		panic(err)
 	}
+}
 
+func TestReceiveReward(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	userDao := dao.NewUserDao()
+	user, err := userDao.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	client := NewUserClient()
+	//初始化配置
+	err = client.ReceiveReward(user)
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+}
+
+func TestGetUserIsolationPageData(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	userDao := dao.NewUserDao()
+	user, err := userDao.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	client := NewUserClient()
+	//初始化配置
+	resp, err := client.GetUserIsolationPageData(user)
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	t.Log(resp)
+}
+
+func TestGetExchangeRateInfo(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	userDao := dao.NewUserDao()
+	user, err := userDao.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	client := NewUserClient()
+	//初始化配置
+	res, err := client.GetExchangeRateInfo(user)
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	t.Log(res)
+}
+func TestGetGetXmTravelReward(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	userDao := dao.NewUserDao()
+	user, err := userDao.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	client := NewUserClient()
+	//初始化配置
+	_, err = client.GetXmTravelReward(user)
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+}
+
+func TestGetEnergyAward(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	userDao := dao.NewUserDao()
+	user, err := userDao.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	client := NewUserClient()
+	//初始化配置
+	err = client.GetEnergyAward(user)
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
 }

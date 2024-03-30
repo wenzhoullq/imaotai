@@ -17,6 +17,7 @@ func RouteInit() *gin.Engine {
 			logIn.POST("/login", user.LogIn)
 			logIn.POST("/updateAddress", user.UpdateAddress)
 			logIn.POST("/updateToken", user.UpdateToken)
+			logIn.POST("/getUserStatus", user.GetUserStatus)
 		}
 	}
 	return r

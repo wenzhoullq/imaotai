@@ -67,3 +67,15 @@ curl --location 'http://localhost:8080/imaotai/user/updateToken' \
     "mobile":"138********"
 }'
 ```
+
+* 查看用户状态
+
+Token一个月过期,需要获得验证码重新更新
+
+```cmd
+curl --location 'http://localhost:8080/imaotai/user/getUserStatus' \
+--header 'Content-Type: application/json' \
+--data '{
+    "mobile":"138********"
+}'
+```

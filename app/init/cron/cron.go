@@ -1,6 +1,7 @@
 package cron
 
 import (
+	"fmt"
 	"github.com/robfig/cron"
 	"github.com/sirupsen/logrus"
 	"zuoxingtao/init/common"
@@ -36,6 +37,13 @@ func InitCronTask() error {
 	err = c.AddFunc(config.Config.AddRecord, AddRecord)
 	if err != nil {
 		return err
+	}
+	for start := config.Config.TravelStart; start < config.Config.TravelEnd; start = start + config.Config.TravelStep {
+		cronStr := fmt.Sprintf("0 0 %d * *", start)
+		err = c.AddFunc(cronStr, TravelReward)
+		if err != nil {
+			return err
+		}
 	}
 	c.Start()
 	return nil
@@ -76,6 +84,14 @@ func Reservation() {
 func AddRecord() {
 	um := user.NewUserModel(user.SetLog())
 	err := um.AddRecord()
+	if err != nil {
+		um.Logln(logrus.ErrorLevel, err.Error())
+	}
+}
+
+func TravelReward() {
+	um := user.NewUserModel(user.SetLog())
+	err := um.TravelReward()
 	if err != nil {
 		um.Logln(logrus.ErrorLevel, err.Error())
 	}

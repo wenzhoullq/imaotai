@@ -1,13 +1,32 @@
 package shop
 
 import (
-	"github.com/sirupsen/logrus"
 	"testing"
 	"zuoxingtao/init/common"
 	"zuoxingtao/init/config"
 	"zuoxingtao/init/db"
 	"zuoxingtao/init/log"
 )
+
+func initTest(confAddress string) error {
+	err := config.ConfigInit(confAddress)
+	if err != nil {
+		return err
+	}
+	err = common.CommonInit()
+	if err != nil {
+		return err
+	}
+	err = log.InitLog()
+	if err != nil {
+		return err
+	}
+	err = db.InitDB()
+	if err != nil {
+		return err
+	}
+	return nil
+}
 
 func TestGetShopList(t *testing.T) {
 	sm := NewShopModel()
@@ -30,27 +49,11 @@ func TestGetShopList(t *testing.T) {
 }
 
 func TestUpdateShop(t *testing.T) {
-	err := common.CommonInit()
+	err := initTest("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
 	}
-	err = config.ConfigInit("../../../config/configTest.toml")
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = log.InitLog()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = db.InitDB()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	log.Logger = logrus.New()
 	sm := NewShopModel(SetLog())
 	sm.UpdateShop()
 }

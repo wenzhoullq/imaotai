@@ -3,7 +3,6 @@ package client
 import (
 	"fmt"
 	"testing"
-	"zuoxingtao/init/common"
 )
 
 func TestGetShopList(t *testing.T) {
@@ -19,7 +18,7 @@ func TestGetShopList(t *testing.T) {
 }
 
 func TestGetShopsByProvince(t *testing.T) {
-	err := common.CommonInit()
+	err := initTest("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)

@@ -6,6 +6,7 @@ type Configuration struct {
 	MysqlConfigure    `toml:"mysql_configure"`
 	LogConfigure      `toml:"log_configure"`
 	CronTaskConfigure `toml:"corn_task_configure"`
+	FilterConfigure   `toml:"filter_configure"`
 }
 
 type LogConfigure struct {
@@ -38,4 +39,11 @@ type CronTaskConfigure struct {
 	UpdateCommon string `toml:"update_common"`
 	Reservation  string `toml:"reservation"`
 	AddRecord    string `toml:"add_record"`
+	TravelStart  int    `toml:"travel_start"`
+	TravelEnd    int    `toml:"travel_end"`
+	TravelStep   int    `toml:"travel_step"`
+}
+
+type FilterConfigure struct {
+	ItemsCode []string `toml:"items_code"`
 }

@@ -18,3 +18,7 @@ type UpdateTokenRequest struct {
 	Mobile string `json:"mobile" binding:"required"`
 	Code   string `json:"code" binding:"required"`
 }
+
+type GetUserStatusReq struct {
+	Mobile string `json:"mobile" binding:"required"`
+}

@@ -102,3 +102,30 @@ type RecordResp struct {
 		} `json:"reservationItemVOS"`
 	} `json:"data"`
 }
+
+type PageDataResp struct {
+	ImaotaiResp
+	Data struct {
+		Energy       int `json:"energy"`
+		EnergyReward struct {
+			Value int `json:"value"`
+		} `json:"energyReward"`
+		XmTravel struct {
+			Status       int `json:"status"`
+			RemainChance int `json:"remainChance"`
+		} `json:"xmTravel"`
+	} `json:"data"`
+}
+
+type ExchangeRateInfoResp struct {
+	ImaotaiResp
+	Data struct {
+		CurrentPeriodCanConvertXmyNum float64 `json:"currentPeriodCanConvertXmyNum"`
+	} `json:"data"`
+}
+type GetXmTravelRewardResp struct {
+	ImaotaiResp
+	Data struct {
+		TravelRewardXmy float64 `json:"travelRewardXmy"`
+	} `json:"data"`
+}

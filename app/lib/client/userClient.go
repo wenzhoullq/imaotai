@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/go-resty/resty/v2"
+	"net/http"
 	"time"
 	"zuoxingtao/constant"
 	"zuoxingtao/dto/response"
@@ -213,4 +214,262 @@ func (uc *UserClient) GetAppointmentRecord(user *user.User) (*response.RecordRes
 		return nil, errors.New("GetAppointmentResults fail")
 	}
 	return recordResp, nil
+}
+
+// 获得小茅运
+func (uc *UserClient) ReceiveReward(user *user.User) error {
+	url := "https://h5.moutai519.com.cn/game/xmTravel/receiveReward"
+	header := map[string]string{
+		"MT-token":       user.Token,
+		"MT-APP-Version": common.MtVersion,
+		"user-Agent":     "android;29;google;sailfish",
+		"MT-Device-ID":   user.DeviceID,
+		"MT-Lat":         fmt.Sprintf("%f", user.Lat),
+		"MT-Lng":         fmt.Sprintf("%f", user.Lng),
+	}
+	cookies := make([]*http.Cookie, 2)
+	cookies[0] = &http.Cookie{
+		Name:  "MT-Token-Wap",
+		Value: user.Cookie,
+	}
+	cookies[1] = &http.Cookie{
+		Name:  "MT-Device-ID-Wap",
+		Value: user.DeviceID,
+	}
+	resp, err := uc.client.R().
+		SetHeaders(header).
+		SetCookies(cookies).
+		Post(url)
+	fmt.Println(string(resp.Body()))
+	if err != nil {
+		return err
+	}
+	recordResp := &response.RecordResp{}
+	err = json.Unmarshal(resp.Body(), recordResp)
+	if err != nil {
+		return err
+	}
+	if recordResp.Code != constant.CODESUCCESS {
+		return errors.New("GetReward fail")
+	}
+	return nil
+}
+
+// 分享获取耐力值
+func (uc *UserClient) ShareReward(user *user.User) error {
+	url := "https://h5.moutai519.com.cn/game/xmTravel/shareReward"
+	header := map[string]string{
+		"MT-token":       user.Token,
+		"MT-APP-Version": common.MtVersion,
+		"user-Agent":     "android;29;google;sailfish",
+		"MT-Device-ID":   user.DeviceID,
+		"MT-Lat":         fmt.Sprintf("%f", user.Lat),
+		"MT-Lng":         fmt.Sprintf("%f", user.Lng),
+	}
+	cookies := make([]*http.Cookie, 2)
+	cookies[0] = &http.Cookie{
+		Name:  "MT-Token-Wap",
+		Value: user.Cookie,
+	}
+	cookies[1] = &http.Cookie{
+		Name:  "MT-Device-ID-Wap",
+		Value: user.DeviceID,
+	}
+	resp, err := uc.client.R().
+		SetHeaders(header).
+		SetCookies(cookies).
+		Post(url)
+	fmt.Println(string(resp.Body()))
+	if err != nil {
+		return err
+	}
+	recordResp := &response.RecordResp{}
+	err = json.Unmarshal(resp.Body(), recordResp)
+	if err != nil {
+		return err
+	}
+	if recordResp.Code != constant.CODESUCCESS {
+		return errors.New("GetReward fail")
+	}
+	return nil
+}
+
+// 查看可以获得的小茅运
+func (uc *UserClient) GetUserIsolationPageData(user *user.User) (*response.PageDataResp, error) {
+	url := "https://h5.moutai519.com.cn/game/isolationPage/getUserIsolationPageData"
+	header := map[string]string{
+		"MT-APP-Version": common.MtVersion,
+		"user-Agent":     "android;29;google;sailfish",
+		"MT-Device-ID":   user.DeviceID,
+	}
+	cookies := make([]*http.Cookie, 2)
+	cookies[0] = &http.Cookie{
+		Name:  "MT-Token-Wap",
+		Value: user.Cookie,
+	}
+	cookies[1] = &http.Cookie{
+		Name:  "MT-Device-ID-Wap",
+		Value: user.DeviceID,
+	}
+	resp, err := uc.client.R().
+		SetHeaders(header).
+		SetCookies(cookies).
+		Get(url)
+	lib.WriteToTxt(resp.Body())
+	if err != nil {
+		return nil, err
+	}
+	pageDataResp := &response.PageDataResp{}
+	err = json.Unmarshal(resp.Body(), pageDataResp)
+	if err != nil {
+		return nil, err
+	}
+	if pageDataResp.Code != constant.CODESUCCESS {
+		return nil, errors.New("GetReward fail")
+	}
+	return pageDataResp, nil
+}
+
+// 获取本月剩余奖励耐力值
+func (uc *UserClient) GetExchangeRateInfo(user *user.User) (float64, error) {
+	url := "https://h5.moutai519.com.cn/game/synthesize/exchangeRateInfo"
+	header := map[string]string{
+		"MT-APP-Version": common.MtVersion,
+		"user-Agent":     "android;29;google;sailfish",
+		"MT-Device-ID":   user.DeviceID,
+	}
+	cookies := make([]*http.Cookie, 2)
+	cookies[0] = &http.Cookie{
+		Name:  "MT-Token-Wap",
+		Value: user.Cookie,
+	}
+	cookies[1] = &http.Cookie{
+		Name:  "MT-Device-ID-Wap",
+		Value: user.DeviceID,
+	}
+	resp, err := uc.client.R().
+		SetHeaders(header).
+		SetCookies(cookies).
+		Get(url)
+	lib.WriteToTxt(resp.Body())
+	if err != nil {
+		return 0, err
+	}
+	exchangeRateInfoResp := &response.ExchangeRateInfoResp{}
+	err = json.Unmarshal(resp.Body(), exchangeRateInfoResp)
+	if err != nil {
+		return 0, err
+	}
+	if exchangeRateInfoResp.Code != constant.CODESUCCESS {
+		return 0, errors.New("GetReward fail")
+	}
+	return exchangeRateInfoResp.Data.CurrentPeriodCanConvertXmyNum, nil
+}
+
+// 获取本月剩余小茅运
+func (uc *UserClient) GetXmTravelReward(user *user.User) (float64, error) {
+	url := "https://h5.moutai519.com.cn/game/xmTravel/getXmTravelReward"
+	header := map[string]string{
+		"MT-APP-Version": common.MtVersion,
+		"user-Agent":     "android;29;google;sailfish",
+		"MT-Device-ID":   user.DeviceID,
+	}
+	cookies := make([]*http.Cookie, 2)
+	cookies[0] = &http.Cookie{
+		Name:  "MT-Token-Wap",
+		Value: user.Cookie,
+	}
+	cookies[1] = &http.Cookie{
+		Name:  "MT-Device-ID-Wap",
+		Value: user.DeviceID,
+	}
+	resp, err := uc.client.R().
+		SetHeaders(header).
+		SetCookies(cookies).
+		Get(url)
+	lib.WriteToTxt(resp.Body())
+	if err != nil {
+		return 0, err
+	}
+	getXmTravelRewardResp := &response.GetXmTravelRewardResp{}
+	err = json.Unmarshal(resp.Body(), getXmTravelRewardResp)
+	if err != nil {
+		return 0, err
+	}
+	if getXmTravelRewardResp.Code != constant.CODESUCCESS {
+		return 0, errors.New("GetReward fail")
+	}
+	return getXmTravelRewardResp.Data.TravelRewardXmy, nil
+}
+
+// 获得体力奖励
+func (uc *UserClient) GetEnergyAward(user *user.User) error {
+	url := "https://h5.moutai519.com.cn/game/isolationPage/getUserEnergyAward"
+	header := map[string]string{
+		"MT-APP-Version": common.MtVersion,
+		"user-Agent":     "android;29;google;sailfish",
+		"MT-Device-ID":   user.DeviceID,
+		"MT-Lat":         fmt.Sprintf("%f", user.Lat),
+		"MT-Lng":         fmt.Sprintf("%f", user.Lng),
+	}
+	cookies := make([]*http.Cookie, 2)
+	cookies[0] = &http.Cookie{
+		Name:  "MT-Token-Wap",
+		Value: user.Cookie,
+	}
+	cookies[1] = &http.Cookie{
+		Name:  "MT-Device-ID-Wap",
+		Value: user.DeviceID,
+	}
+	resp, err := uc.client.R().
+		SetHeaders(header).
+		SetCookies(cookies).
+		Post(url)
+	if err != nil {
+		return err
+	}
+	imaotaiResp := &response.ImaotaiResp{}
+	err = json.Unmarshal(resp.Body(), imaotaiResp)
+	if err != nil {
+		return err
+	}
+	if imaotaiResp.Code != constant.CODESUCCESS {
+		return errors.New("GetEnergyAward fail")
+	}
+	return nil
+}
+
+// 小茅运旅行活动
+func (uc *UserClient) StartTravel(user *user.User) error {
+	url := "https://h5.moutai519.com.cn/game/xmTravel/startTravel"
+	header := map[string]string{
+		"MT-APP-Version": common.MtVersion,
+		"user-Agent":     "android;29;google;sailfish",
+		"MT-Device-ID":   user.DeviceID,
+	}
+	cookies := make([]*http.Cookie, 2)
+	cookies[0] = &http.Cookie{
+		Name:  "MT-Token-Wap",
+		Value: user.Cookie,
+	}
+	cookies[1] = &http.Cookie{
+		Name:  "MT-Device-ID-Wap",
+		Value: user.DeviceID,
+	}
+	resp, err := uc.client.R().
+		SetHeaders(header).
+		SetCookies(cookies).
+		Post(url)
+	if err != nil {
+		return err
+	}
+	imaotaiResp := &response.ImaotaiResp{}
+	err = json.Unmarshal(resp.Body(), imaotaiResp)
+	if err != nil {
+		return err
+	}
+	if imaotaiResp.Code != constant.CODESUCCESS {
+		return errors.New("StartTravel fail")
+	}
+	return nil
 }

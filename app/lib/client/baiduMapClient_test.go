@@ -3,11 +3,38 @@ package client
 import (
 	"fmt"
 	"testing"
+	"zuoxingtao/init/common"
 	"zuoxingtao/init/config"
+	"zuoxingtao/init/db"
+	"zuoxingtao/init/log"
 )
 
+func initTest(confAddress string) error {
+	err := config.ConfigInit(confAddress)
+	if err != nil {
+		return err
+	}
+	err = common.CommonInit()
+	if err != nil {
+		return err
+	}
+	err = log.InitLog()
+	if err != nil {
+		return err
+	}
+	err = db.InitDB()
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 func TestParseIp(t *testing.T) {
-	config.ConfigInit("../../../config/configTest.toml")
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
 	client := NewBaiduMapClient()
 	//初始化配置
 	resp, err := client.ParseIPToLngAndLat("")
@@ -17,7 +44,11 @@ func TestParseIp(t *testing.T) {
 	}
 }
 func TestParseAddress(t *testing.T) {
-	config.ConfigInit("../../../config/configTest.toml")
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
 	client := NewBaiduMapClient()
 	//初始化配置
 	resp, err := client.ParseAddressToLngAndLat("")

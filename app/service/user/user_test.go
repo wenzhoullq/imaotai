@@ -1,7 +1,6 @@
 package user
 
 import (
-	"github.com/sirupsen/logrus"
 	"testing"
 	"zuoxingtao/init/common"
 	"zuoxingtao/init/config"
@@ -9,69 +8,50 @@ import (
 	"zuoxingtao/init/log"
 )
 
-func TestReservation(t *testing.T) {
-	err := common.CommonInit()
+func initTest(confAddress string) error {
+	err := config.ConfigInit(confAddress)
 	if err != nil {
-		t.Error(err)
-		panic(err)
+		return err
 	}
-	err = config.ConfigInit("../../../config/configTest.toml")
+	err = common.CommonInit()
 	if err != nil {
-		t.Error(err)
-		panic(err)
+		return err
+	}
+	err = log.InitLog()
+	if err != nil {
+		return err
 	}
 	err = db.InitDB()
 	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func TestReservation(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
 		t.Error(err)
 		panic(err)
 	}
-	log.Logger = logrus.New()
 	um := NewUserModel(SetLog())
 	um.Reservation()
 }
 func TestExUser(t *testing.T) {
-	err := common.CommonInit()
+	err := initTest("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
 	}
-	err = config.ConfigInit("../../../config/configTest.toml")
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = db.InitDB()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	log.Logger = logrus.New()
 	um := NewUserModel(SetLog())
 	um.ExpUser()
 }
 func TestAddRecord(t *testing.T) {
-	err := common.CommonInit()
+	err := initTest("../../../config/configTest.toml")
 	if err != nil {
 		t.Error(err)
 		panic(err)
 	}
-
-	err = config.ConfigInit("../../../config/configTest.toml")
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = log.InitLog()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	err = db.InitDB()
-	if err != nil {
-		t.Error(err)
-		panic(err)
-	}
-	log.Logger = logrus.New()
 	um := NewUserModel(SetLog())
 	um.AddRecord()
 }

@@ -2,11 +2,13 @@ package common
 
 import (
 	"github.com/sirupsen/logrus"
+	"zuoxingtao/init/config"
 	"zuoxingtao/init/log"
 )
 
 var MtVersion string
 var SessionID int
+var FilterSet map[string]struct{}
 
 func CommonInit() error {
 	commonClient := NewCommonClient()
@@ -20,6 +22,11 @@ func CommonInit() error {
 		return err
 	}
 	SessionID = sessionID
+	//初始化想要的茅台
+	FilterSet = make(map[string]struct{})
+	for _, v := range config.Config.FilterConfigure.ItemsCode {
+		FilterSet[v] = struct{}{}
+	}
 	return nil
 }
 

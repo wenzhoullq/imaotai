@@ -12,9 +12,16 @@ const (
 
 const (
 	USER_INIT     = iota //初始化
-	USER_IDLE            //空闲
+	USER_IDLE            //地址未更新
 	USER_NORMAL          //正常
 	USER_ABNORMAL        //异常
+)
+
+const (
+	USER_NOTEXIST    = "用户不存在"           //初始化
+	USER_ADDRESSNULL = "用户地址未更新"         //空闲
+	USER_PORCESSING  = "用户正常"            //正常
+	USER_TOKENEX     = "用户已过期,重新更新Token" //异常
 )
 
 const (
@@ -36,13 +43,20 @@ const (
 )
 
 const (
-	MT_1935 = "10056"
-)
-const (
 	AESKEY = "qbhajinldepmucsonaaaccgypwuvcjaa"
 	AESIV  = "2018534749963515"
 )
 
 const (
 	AWARD = 0
+)
+
+const (
+	TRAVEL_STATUS_FREE       = 1
+	TRAVEL_STATUS_PROCESSING = 2
+	TRAVEL_STATUS_FINISH     = 3
+)
+
+const (
+	TRAVEL_CONSUME = 100
 )
