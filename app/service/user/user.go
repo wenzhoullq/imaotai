@@ -352,7 +352,7 @@ func (um *UserModel) UpdateToken(c *gin.Context, req *requset.UpdateTokenRequest
 func (um *UserModel) parseRecord(user *u.User, resp *response.RecordResp) []*record.Record {
 	records := make([]*record.Record, 0)
 	for _, v := range resp.Data.ReservationItemVOS {
-		if v.Status != constant.AWARD {
+		if v.Status != constant.AWARD || v.SessionType != constant.SESSION_TYPE_NORMAL_ORDER {
 			continue
 		}
 		record := &record.Record{

@@ -1,6 +1,7 @@
 package user
 
 import (
+	"github.com/sirupsen/logrus"
 	"testing"
 	"zuoxingtao/init/common"
 	"zuoxingtao/init/config"
@@ -58,7 +59,10 @@ func TestExUser(t *testing.T) {
 		panic(err)
 	}
 	um := NewUserModel(SetLog())
-	um.ExpUser()
+	err = um.ExpUser()
+	if err != nil {
+		um.Logln(logrus.ErrorLevel, err.Error())
+	}
 }
 func TestAddRecord(t *testing.T) {
 	err := initTest("../../../config/configTest.toml")
@@ -67,7 +71,10 @@ func TestAddRecord(t *testing.T) {
 		panic(err)
 	}
 	um := NewUserModel(SetLog())
-	um.AddRecord()
+	err = um.AddRecord()
+	if err != nil {
+		um.Logln(logrus.ErrorLevel, err.Error())
+	}
 }
 
 func TestTravelReward(t *testing.T) {

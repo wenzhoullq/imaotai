@@ -96,9 +96,10 @@ type RecordResp struct {
 	ImaotaiResp
 	Data struct {
 		ReservationItemVOS []struct {
-			Status   int    `json:"status"`
-			ItemID   string `json:"itemId"`
-			ItemName string `json:"itemName"`
+			Status      int    `json:"status"`
+			ItemID      string `json:"itemId"`
+			ItemName    string `json:"itemName"`
+			SessionType int    `json:"sessionType"`
 		} `json:"reservationItemVOS"`
 	} `json:"data"`
 }

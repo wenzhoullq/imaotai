@@ -53,7 +53,7 @@ func TestGetAppointmentResults(t *testing.T) {
 		panic(err)
 	}
 	userDao := dao.NewUserDao()
-	user, err := userDao.GetUserByMobile("")
+	user, err := userDao.GetUserByMobile("13730277033")
 	if err != nil {
 		t.Error(err)
 		panic(err)

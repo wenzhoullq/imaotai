@@ -60,3 +60,7 @@ const (
 const (
 	TRAVEL_CONSUME = 100
 )
+
+const (
+	SESSION_TYPE_NORMAL_ORDER = 1
+)
