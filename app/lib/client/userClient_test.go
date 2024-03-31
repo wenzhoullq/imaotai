@@ -172,3 +172,24 @@ func TestGetEnergyAward(t *testing.T) {
 		panic(err)
 	}
 }
+
+func TestShareReward(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	userDao := dao.NewUserDao()
+	user, err := userDao.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	client := NewUserClient()
+	//初始化配置
+	err = client.ShareReward(user)
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+}

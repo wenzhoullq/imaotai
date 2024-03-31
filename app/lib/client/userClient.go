@@ -278,7 +278,6 @@ func (uc *UserClient) ShareReward(user *user.User) error {
 		SetHeaders(header).
 		SetCookies(cookies).
 		Post(url)
-	fmt.Println(string(resp.Body()))
 	if err != nil {
 		return err
 	}
