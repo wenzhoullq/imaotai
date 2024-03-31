@@ -425,7 +425,7 @@ func (um *UserModel) TravelReward() error {
 	for _, u := range users {
 		pageData, err := um.GetUserIsolationPageData(u)
 		if err != nil {
-			um.Logln(logrus.ErrorLevel, err)
+			um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
 			continue
 		}
 		//现存体力
@@ -434,7 +434,7 @@ func (um *UserModel) TravelReward() error {
 		if pageData.Data.EnergyReward.Value > 0 {
 			err = um.GetEnergyAward(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err)
+				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
 				continue
 			}
 			curEnergy = curEnergy + pageData.Data.EnergyReward.Value
@@ -448,30 +448,30 @@ func (um *UserModel) TravelReward() error {
 		if pageData.Data.XmTravel.Status == constant.TRAVEL_STATUS_FINISH {
 			err = um.ReceiveReward(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err)
+				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
 				continue
 			}
 			err = um.ShareReward(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err)
+				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
 				continue
 			}
 		}
 		travelRewardXmy, err := um.GetXmTravelReward(u)
 		if err != nil {
-			um.Logln(logrus.ErrorLevel, err)
+			um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
 			continue
 		}
 		exchangeRateInfo, err := um.GetExchangeRateInfo(u)
 		if err != nil {
-			um.Logln(logrus.ErrorLevel, err)
+			um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
 			continue
 		}
 		// 本月小茅运还有余额;今日次数还有;体力值大于一次旅行的消耗量;
-		if exchangeRateInfo >= travelRewardXmy && curEnergy > constant.TRAVEL_CONSUME && pageData.Data.XmTravel.RemainChance > 0 {
+		if exchangeRateInfo >= travelRewardXmy && curEnergy >= constant.TRAVEL_CONSUME && pageData.Data.XmTravel.RemainChance > 0 {
 			err := um.StartTravel(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err)
+				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
 				continue
 			}
 		}

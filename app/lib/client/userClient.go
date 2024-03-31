@@ -240,16 +240,15 @@ func (uc *UserClient) ReceiveReward(user *user.User) error {
 		SetHeaders(header).
 		SetCookies(cookies).
 		Post(url)
-	fmt.Println(string(resp.Body()))
 	if err != nil {
 		return err
 	}
-	recordResp := &response.RecordResp{}
-	err = json.Unmarshal(resp.Body(), recordResp)
+	receiveResp := &response.ImaotaiResp{}
+	err = json.Unmarshal(resp.Body(), receiveResp)
 	if err != nil {
 		return err
 	}
-	if recordResp.Code != constant.CODESUCCESS {
+	if receiveResp.Code != constant.CODESUCCESS {
 		return errors.New("GetReward fail")
 	}
 	return nil
@@ -283,12 +282,12 @@ func (uc *UserClient) ShareReward(user *user.User) error {
 	if err != nil {
 		return err
 	}
-	recordResp := &response.RecordResp{}
-	err = json.Unmarshal(resp.Body(), recordResp)
+	imaotaiResp := &response.ImaotaiResp{}
+	err = json.Unmarshal(resp.Body(), imaotaiResp)
 	if err != nil {
 		return err
 	}
-	if recordResp.Code != constant.CODESUCCESS {
+	if imaotaiResp.Code != constant.CODESUCCESS {
 		return errors.New("GetReward fail")
 	}
 	return nil
@@ -315,7 +314,6 @@ func (uc *UserClient) GetUserIsolationPageData(user *user.User) (*response.PageD
 		SetHeaders(header).
 		SetCookies(cookies).
 		Get(url)
-	lib.WriteToTxt(resp.Body())
 	if err != nil {
 		return nil, err
 	}
@@ -351,7 +349,6 @@ func (uc *UserClient) GetExchangeRateInfo(user *user.User) (float64, error) {
 		SetHeaders(header).
 		SetCookies(cookies).
 		Get(url)
-	lib.WriteToTxt(resp.Body())
 	if err != nil {
 		return 0, err
 	}
@@ -387,7 +384,6 @@ func (uc *UserClient) GetXmTravelReward(user *user.User) (float64, error) {
 		SetHeaders(header).
 		SetCookies(cookies).
 		Get(url)
-	lib.WriteToTxt(resp.Body())
 	if err != nil {
 		return 0, err
 	}

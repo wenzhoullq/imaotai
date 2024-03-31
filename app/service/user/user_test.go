@@ -37,6 +37,20 @@ func TestReservation(t *testing.T) {
 	um := NewUserModel(SetLog())
 	um.Reservation()
 }
+func TestGetAppointmentRecord(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	um := NewUserModel(SetLog())
+	user, err := um.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	um.GetAppointmentRecord(user)
+}
 func TestExUser(t *testing.T) {
 	err := initTest("../../../config/configTest.toml")
 	if err != nil {
@@ -54,4 +68,18 @@ func TestAddRecord(t *testing.T) {
 	}
 	um := NewUserModel(SetLog())
 	um.AddRecord()
+}
+
+func TestTravelReward(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	um := NewUserModel(SetLog())
+	err = um.TravelReward()
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
 }
