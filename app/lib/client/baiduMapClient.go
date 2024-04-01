@@ -43,7 +43,7 @@ func (bmc *BaiduMapClient) ParseIPToLngAndLat(ip string) (*response.BaiduParseIP
 		return nil, err
 	}
 	if bmr.Status != constant.BAIDUMAPSUCCESS {
-		return nil, errors.New("parse IP by BaiduMap fail")
+		return nil, errors.New("ParseIPToLngAndLat fail")
 	}
 	return bmr, nil
 }
@@ -65,7 +65,7 @@ func (bmc *BaiduMapClient) ParseAddressToLngAndLat(address string) (*response.Ba
 		return nil, err
 	}
 	if bpr.Status != constant.BAIDUMAPSUCCESS {
-		return nil, errors.New("parse IP by BaiduMap fail")
+		return nil, errors.New("ParseAddressToLngAndLat fail")
 	}
 	return bpr, nil
 }
@@ -88,7 +88,7 @@ func (bmc *BaiduMapClient) ParseLngAndLatToAddress(lng, lat float64) (*response.
 		return nil, err
 	}
 	if bpr.Status != constant.BAIDUMAPSUCCESS {
-		return nil, errors.New("parse IP by BaiduMap fail")
+		return nil, errors.New("ParseLngAndLatToAddress fail")
 	}
 	return bpr, nil
 }

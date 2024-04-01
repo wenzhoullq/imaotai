@@ -37,7 +37,7 @@ func (ic *ItemClient) GetItemList() ([]*response.Item, error) {
 		return nil, err
 	}
 	if sessionResp.Code != constant.CODESUCCESS {
-		return nil, errors.New("获取Url失败," + sessionResp.Message)
+		return nil, errors.New("GetItemList," + sessionResp.Message)
 	}
 
 	return sessionResp.Data.ItemList, nil

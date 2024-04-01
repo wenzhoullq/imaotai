@@ -50,7 +50,11 @@ func TestGetAppointmentRecord(t *testing.T) {
 		t.Error(err)
 		panic(err)
 	}
-	um.GetAppointmentRecord(user)
+	_, err = um.GetAppointmentRecord(user)
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
 }
 func TestExUser(t *testing.T) {
 	err := initTest("../../../config/configTest.toml")
@@ -85,6 +89,24 @@ func TestTravelReward(t *testing.T) {
 	}
 	um := NewUserModel(SetLog())
 	err = um.TravelReward()
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+}
+func TestUserEnergyAward(t *testing.T) {
+	err := initTest("../../../config/configTest.toml")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	um := NewUserModel(SetLog())
+	user, err := um.GetUserByMobile("")
+	if err != nil {
+		t.Error(err)
+		panic(err)
+	}
+	err = um.GetEnergyAward(user)
 	if err != nil {
 		t.Error(err)
 		panic(err)

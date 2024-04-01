@@ -425,7 +425,7 @@ func (um *UserModel) TravelReward() error {
 	for _, u := range users {
 		pageData, err := um.GetUserIsolationPageData(u)
 		if err != nil {
-			um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
+			um.Logln(logrus.ErrorLevel, err)
 			continue
 		}
 		//现存体力
@@ -434,47 +434,48 @@ func (um *UserModel) TravelReward() error {
 		if pageData.Data.EnergyReward.Value > 0 {
 			err = um.GetEnergyAward(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
+				um.Logln(logrus.ErrorLevel, err)
 				continue
 			}
 			curEnergy = curEnergy + pageData.Data.EnergyReward.Value
 		}
 		//正在旅行中
 		if pageData.Data.XmTravel.Status == constant.TRAVEL_STATUS_PROCESSING {
-			um.Logln(logrus.InfoLevel, "user ", u.UserID, " is traveling")
+			um.Logln(logrus.InfoLevel, "userID:", u.UserID, " is traveling")
 			continue
 		}
 		// 如果旅行结束了,获取小茅运和首次分享获得体力值(该体力值不计入curEnergy,避免逻辑复杂化)
 		if pageData.Data.XmTravel.Status == constant.TRAVEL_STATUS_FINISH {
 			err = um.ReceiveReward(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
+				um.Logln(logrus.ErrorLevel, err)
 				continue
 			}
 			err = um.ShareReward(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
+				um.Logln(logrus.ErrorLevel, err)
 				continue
 			}
 		}
 		travelRewardXmy, err := um.GetXmTravelReward(u)
 		if err != nil {
-			um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
+			um.Logln(logrus.ErrorLevel, err)
 			continue
 		}
 		exchangeRateInfo, err := um.GetExchangeRateInfo(u)
 		if err != nil {
-			um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
+			um.Logln(logrus.ErrorLevel, err)
 			continue
 		}
 		// 本月小茅运还有余额;今日次数还有;体力值大于一次旅行的消耗量;
 		if exchangeRateInfo >= travelRewardXmy && curEnergy >= constant.TRAVEL_CONSUME && pageData.Data.XmTravel.RemainChance > 0 {
 			err := um.StartTravel(u)
 			if err != nil {
-				um.Logln(logrus.ErrorLevel, err, "userID", u.UserID)
+				um.Logln(logrus.ErrorLevel, err)
 				continue
 			}
 		}
+		um.Logln(logrus.InfoLevel, fmt.Sprintf("TravelReward success,userID:%d", u.UserID))
 	}
 	um.Logln(logrus.InfoLevel, "get reward Success")
 	return nil

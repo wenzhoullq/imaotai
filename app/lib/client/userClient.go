@@ -66,7 +66,7 @@ func (uc *UserClient) PostVerify(user *user.User) error {
 		return err
 	}
 	if imaotaiResp.Code != constant.CODESUCCESS {
-		return errors.New("获取验证码失败")
+		return errors.New(fmt.Sprintf("PostVerify fail,userID:%d,%s", user.UserID, imaotaiResp.Message))
 	}
 
 	return nil
@@ -116,7 +116,7 @@ func (uc *UserClient) PostLogIn(user *user.User, code string) error {
 		return err
 	}
 	if mtLogInResp.Code != constant.CODESUCCESS {
-		return errors.New("登录失败," + mtLogInResp.Message)
+		return errors.New(fmt.Sprintf("PostLogIn fail,userId:%d,%s", user.UserID, mtLogInResp.Message))
 	}
 	user.Token = mtLogInResp.Data.Token
 	user.UserID = mtLogInResp.Data.UserID
@@ -186,7 +186,7 @@ func (uc *UserClient) PostReserve(user *user.User, itemCode string, shopID strin
 		return err
 	}
 	if reverseResp.Code != constant.CODESUCCESS {
-		return errors.New("申购失败," + reverseResp.Message)
+		return errors.New(fmt.Sprintf("PostReserve fail,userID:%d,%s", user.UserID, reverseResp.Message))
 	}
 	return nil
 }
@@ -211,7 +211,7 @@ func (uc *UserClient) GetAppointmentRecord(user *user.User) (*response.RecordRes
 		return nil, err
 	}
 	if recordResp.Code != constant.CODESUCCESS {
-		return nil, errors.New("GetAppointmentResults fail")
+		return nil, errors.New(fmt.Sprintf("GetAppointmentResults fail,UserID:%d,%s", user.UserID, recordResp.Message))
 	}
 	return recordResp, nil
 }
@@ -249,7 +249,7 @@ func (uc *UserClient) ReceiveReward(user *user.User) error {
 		return err
 	}
 	if receiveResp.Code != constant.CODESUCCESS {
-		return errors.New("GetReward fail")
+		return errors.New(fmt.Sprintf("ReceiveReward fail,userID:%d,%s", user.UserID, receiveResp.Message))
 	}
 	return nil
 }
@@ -287,7 +287,7 @@ func (uc *UserClient) ShareReward(user *user.User) error {
 		return err
 	}
 	if imaotaiResp.Code != constant.CODESUCCESS {
-		return errors.New("GetReward fail")
+		return errors.New(fmt.Sprintf("ShareReward fail,userID:%d,%s", user.UserID, imaotaiResp.Message))
 	}
 	return nil
 }
@@ -322,7 +322,7 @@ func (uc *UserClient) GetUserIsolationPageData(user *user.User) (*response.PageD
 		return nil, err
 	}
 	if pageDataResp.Code != constant.CODESUCCESS {
-		return nil, errors.New("GetReward fail")
+		return nil, errors.New(fmt.Sprintf("GetUserIsolationPageData fail,userID:%d,%s", user.UserID, pageDataResp.Message))
 	}
 	return pageDataResp, nil
 }
@@ -357,7 +357,7 @@ func (uc *UserClient) GetExchangeRateInfo(user *user.User) (float64, error) {
 		return 0, err
 	}
 	if exchangeRateInfoResp.Code != constant.CODESUCCESS {
-		return 0, errors.New("GetReward fail")
+		return 0, errors.New(fmt.Sprintf("GetExchangeRateInfo fail,userID:%d,%s", user.UserID, exchangeRateInfoResp.Message))
 	}
 	return exchangeRateInfoResp.Data.CurrentPeriodCanConvertXmyNum, nil
 }
@@ -392,7 +392,7 @@ func (uc *UserClient) GetXmTravelReward(user *user.User) (float64, error) {
 		return 0, err
 	}
 	if getXmTravelRewardResp.Code != constant.CODESUCCESS {
-		return 0, errors.New("GetReward fail")
+		return 0, errors.New(fmt.Sprintf("GetXmTravelReward fail,userID:%d,%s", user.UserID, getXmTravelRewardResp.Message))
 	}
 	return getXmTravelRewardResp.Data.TravelRewardXmy, nil
 }
@@ -429,7 +429,7 @@ func (uc *UserClient) GetEnergyAward(user *user.User) error {
 		return err
 	}
 	if imaotaiResp.Code != constant.CODESUCCESS {
-		return errors.New("GetEnergyAward fail")
+		return errors.New(fmt.Sprintf("GetEnergyAward fail,userID:%d,%s", user.UserID, imaotaiResp.Message))
 	}
 	return nil
 }
@@ -464,7 +464,7 @@ func (uc *UserClient) StartTravel(user *user.User) error {
 		return err
 	}
 	if imaotaiResp.Code != constant.CODESUCCESS {
-		return errors.New("StartTravel fail")
+		return errors.New(fmt.Sprintf("StartTravel fail,UserID:%d,%s", user.UserID, imaotaiResp.Message))
 	}
 	return nil
 }
