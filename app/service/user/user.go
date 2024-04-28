@@ -468,7 +468,7 @@ func (um *UserModel) TravelReward() error {
 			continue
 		}
 		// 本月小茅运还有余额;今日次数还有;体力值大于一次旅行的消耗量;
-		if exchangeRateInfo >= travelRewardXmy && curEnergy >= constant.TRAVEL_CONSUME && pageData.Data.XmTravel.RemainChance > 0 {
+		if exchangeRateInfo > travelRewardXmy && curEnergy >= constant.TRAVEL_CONSUME && pageData.Data.XmTravel.RemainChance > 0 {
 			err := um.StartTravel(u)
 			if err != nil {
 				um.Logln(logrus.ErrorLevel, err)

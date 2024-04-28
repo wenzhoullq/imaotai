@@ -420,7 +420,6 @@ func (uc *UserClient) GetEnergyAward(user *user.User) error {
 		SetHeaders(header).
 		SetCookies(cookies).
 		Post(url)
-	lib.WriteToTxt(resp.Body())
 	if err != nil {
 		return err
 	}

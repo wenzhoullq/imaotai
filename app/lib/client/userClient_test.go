@@ -138,18 +138,19 @@ func TestGetGetXmTravelReward(t *testing.T) {
 		panic(err)
 	}
 	userDao := dao.NewUserDao()
-	user, err := userDao.GetUserByMobile("")
+	user, err := userDao.GetUserByMobile("13868449322")
 	if err != nil {
 		t.Error(err)
 		panic(err)
 	}
 	client := NewUserClient()
 	//初始化配置
-	_, err = client.GetXmTravelReward(user)
+	res, err := client.GetXmTravelReward(user)
 	if err != nil {
 		t.Error(err)
 		panic(err)
 	}
+	t.Log(res)
 }
 
 func TestGetEnergyAward(t *testing.T) {
