@@ -1,0 +1,542 @@
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47658.5µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:14:05"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:472.3197msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:14:05"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:14:05"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:14:05"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44754.4µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:14:05"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:14:05"}
+{"client_ip":"::1","latency_time":9404500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:14:05"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:444.0159msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:14:05"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:14:05"}
+{"client_ip":"::1","latency_time":11575200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:14:05"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:17:44"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:401.0585msSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:17:44"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:17:44"}
+{"client_ip":"::1","latency_time":4927600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:17:44"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.2078msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:17:51"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:17:51"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44663.4µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:17:51"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:17:51"}
+{"client_ip":"::1","latency_time":3457900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:17:51"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:473.8558msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:17:51"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:17:51"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.9087msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:17:51"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:17:51"}
+{"client_ip":"::1","latency_time":8415700,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:17:51"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:20:12"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40597.3µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:20:12"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:20:12"}
+{"client_ip":"::1","latency_time":2706400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:20:12"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.3311msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:20:14"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:20:14"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502.6µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:20:14"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:20:14"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44540.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:20:14"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:20:14"}
+{"client_ip":"::1","latency_time":1552500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:20:14"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:442.9711msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:20:14"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:20:14"}
+{"client_ip":"::1","latency_time":4495400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:20:14"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:21:39"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40568.7µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:21:39"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:21:39"}
+{"client_ip":"::1","latency_time":2599700,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:21:39"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:21:41"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40516.2µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:21:41"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:21:41"}
+{"client_ip":"::1","latency_time":1294100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:21:41"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:22:10"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40569.2µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:22:10"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:22:10"}
+{"client_ip":"::1","latency_time":1575400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:22:10"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:22:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40504.5µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:22:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:22:27"}
+{"client_ip":"::1","latency_time":1125800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:22:27"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:23:39"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40848.6µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:23:39"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:23:39"}
+{"client_ip":"::1","latency_time":2927400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:23:39"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:23:42"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40502.9µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:23:42"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:23:42"}
+{"client_ip":"::1","latency_time":1546500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:23:42"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:24:04"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40659.6µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:24:04"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:24:04"}
+{"client_ip":"::1","latency_time":4870900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:24:04"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:24:24"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40819.2µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:24:24"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:24:24"}
+{"client_ip":"::1","latency_time":3926000,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:24:24"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.0553msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:24:29"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:24:29"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:472.3192msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:24:29"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:24:29"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:442.2636msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:24:29"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:24:29"}
+{"client_ip":"::1","latency_time":4729900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:24:29"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44518.4µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:24:29"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:24:29"}
+{"client_ip":"::1","latency_time":5321600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:24:29"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:25:04"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40588.1µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:25:04"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:25:04"}
+{"client_ip":"::1","latency_time":1656700,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:25:04"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:25:58"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40763µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:25:58"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:25:58"}
+{"client_ip":"::1","latency_time":2044300,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:25:58"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:25:58"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40502.7µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:25:58"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:25:58"}
+{"client_ip":"::1","latency_time":1016900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:25:58"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40687.4µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:26:00"}
+{"client_ip":"::1","latency_time":1721500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47726.4µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47503.5µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.0273msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44116µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:26:00"}
+{"client_ip":"::1","latency_time":2875200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:26:00"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:26:00"}
+{"client_ip":"::1","latency_time":2667800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:26:00"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:26:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40797.9µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:26:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:26:27"}
+{"client_ip":"::1","latency_time":2044500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:26:27"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:26:36"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40613.6µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:26:36"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:26:36"}
+{"client_ip":"::1","latency_time":682200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:26:36"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:26:51"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40514.7µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:26:51"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:26:51"}
+{"client_ip":"::1","latency_time":602300,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:26:51"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:27:03"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40603.1µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:27:03"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:27:03"}
+{"client_ip":"::1","latency_time":1087800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:27:03"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:27:31"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40502.3µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:27:31"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:27:31"}
+{"client_ip":"::1","latency_time":1183900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:27:31"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:27:31"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40696.5µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:27:31"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:27:31"}
+{"client_ip":"::1","latency_time":1468200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:27:31"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.1909msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:28:21"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:28:21"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47547.8µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:28:21"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:28:21"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.0871msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:28:21"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:28:21"}
+{"client_ip":"::1","latency_time":2788900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:28:21"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44510.9µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:28:21"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:28:21"}
+{"client_ip":"::1","latency_time":2584400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:28:21"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:30:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40735µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:30:00"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:30:00"}
+{"client_ip":"::1","latency_time":1710200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:30:00"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:30:06"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40569.5µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:30:06"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:30:06"}
+{"client_ip":"::1","latency_time":2021400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:30:06"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:470sSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:30:09"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47761.1µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:30:09"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:30:09"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:30:09"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44502µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:30:09"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:30:09"}
+{"client_ip":"::1","latency_time":1066100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:30:09"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.0118msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:30:09"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:30:09"}
+{"client_ip":"::1","latency_time":2346000,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:30:09"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:30:38"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40510.5µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:30:38"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:30:38"}
+{"client_ip":"::1","latency_time":1877000,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:30:38"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:30:47"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40778.3µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:30:47"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:30:47"}
+{"client_ip":"::1","latency_time":3153700,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:30:47"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47227.4µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:30:48"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:30:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502.3µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:30:48"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:30:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44513µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:30:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:30:48"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:30:48"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:30:48"}
+{"client_ip":"::1","latency_time":2314600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:30:48"}
+{"client_ip":"::1","latency_time":2087200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:30:48"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:31:09"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40637.7µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:31:09"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:31:09"}
+{"client_ip":"::1","latency_time":1977800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:31:09"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:31:13"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40502µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:31:13"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:31:13"}
+{"client_ip":"::1","latency_time":2012900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:31:13"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:31:17"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40580.8µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:31:17"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:31:17"}
+{"client_ip":"::1","latency_time":1957400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:31:17"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47270.2µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:31:18"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:31:18"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:31:18"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:31:18"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44509.8µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:31:18"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:31:18"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44513.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:31:18"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:31:18"}
+{"client_ip":"::1","latency_time":1795700,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:31:18"}
+{"client_ip":"::1","latency_time":2114600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:31:18"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47720.6µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:31:48"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:31:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47503.5µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:31:48"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:31:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:31:48"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:31:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44509.2µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:31:48"}
+{"client_ip":"::1","latency_time":2774200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:31:48"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:31:48"}
+{"client_ip":"::1","latency_time":2629200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:31:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47996.9µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:32:11"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:32:11"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47548.6µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:32:11"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:32:11"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44535.6µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:32:11"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:32:11"}
+{"client_ip":"::1","latency_time":5410700,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:32:11"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:443.2715msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:32:11"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:32:11"}
+{"client_ip":"::1","latency_time":5952200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:32:11"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.934msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:33:05"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:33:05"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.3069msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:33:05"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:33:05"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.3056msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:33:05"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:33:05"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.1225msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:33:05"}
+{"client_ip":"::1","latency_time":6247200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:33:05"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:33:05"}
+{"client_ip":"::1","latency_time":5505400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:33:05"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:35:50"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40557.8µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:35:50"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:35:50"}
+{"client_ip":"::1","latency_time":1855800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:35:50"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:41:24"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:401.2158msSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:41:24"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:41:24"}
+{"client_ip":"::1","latency_time":2791100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:41:24"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.1489msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:41:26"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:41:26"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47678.7µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:41:26"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:41:26"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44592.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:41:26"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44571.6µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:41:26"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:41:26"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:41:26"}
+{"client_ip":"::1","latency_time":3731200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:41:26"}
+{"client_ip":"::1","latency_time":3605600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:41:26"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47452.6µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:41:27"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:41:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47503.5µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:41:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44965µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:41:27"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:41:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:41:27"}
+{"client_ip":"::1","latency_time":3532600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:41:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.0258msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:41:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:41:27"}
+{"client_ip":"::1","latency_time":4150500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:41:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47698.2µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:41:28"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:41:28"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502.8µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:41:28"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44516µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:41:28"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:41:28"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:41:28"}
+{"client_ip":"::1","latency_time":2821400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:41:28"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44501.5µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:41:28"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:41:28"}
+{"client_ip":"::1","latency_time":2666100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:41:28"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:41:32"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:401.3423msSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:41:32"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:41:32"}
+{"client_ip":"::1","latency_time":2685200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:41:32"}
+{"level":"info","msg":"LoginReq:{\"mobile\":\"13868449322\",\"pass_word\":\"123456\"}","time":"2024-06-10 23:41:56"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40640µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:41:56"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\"}","time":"2024-06-10 23:41:56"}
+{"client_ip":"::1","latency_time":63845900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/login","status_code":200,"time":"2024-06-10 23:41:56"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:41:56"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40454.5µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:41:56"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:41:56"}
+{"client_ip":"::1","latency_time":3631500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:41:56"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502.8µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:43:39"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:43:39"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47524µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:43:39"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:43:39"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44521.3µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:43:39"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:43:39"}
+{"client_ip":"::1","latency_time":2067100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:43:39"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44519µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:43:39"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:43:39"}
+{"client_ip":"::1","latency_time":2588600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:43:39"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:47:28"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:401.0484msSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:47:28"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:47:28"}
+{"client_ip":"::1","latency_time":1563000,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:47:28"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.4918msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:47:29"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:47:29"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:470sSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:47:29"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:47:29"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44516.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:47:29"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:47:29"}
+{"client_ip":"::1","latency_time":3069900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:47:29"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44517.2µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:47:29"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:47:29"}
+{"client_ip":"::1","latency_time":2096800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:47:29"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40502.7µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:51:27"}
+{"client_ip":"::1","latency_time":1104500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47849.5µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:470sSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.0504msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44513.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:51:27"}
+{"client_ip":"::1","latency_time":2413600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:51:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:51:27"}
+{"client_ip":"::1","latency_time":2594300,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:51:27"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40519.1µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:51:30"}
+{"client_ip":"::1","latency_time":1572000,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.4026msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47543.4µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:51:30"}
+{"client_ip":"::1","latency_time":2514500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44503.8µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:51:30"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:51:30"}
+{"client_ip":"::1","latency_time":1625600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:51:30"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40609.8µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:51:35"}
+{"client_ip":"::1","latency_time":1702000,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47625.9µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47504.4µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:51:35"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:51:35"}
+{"client_ip":"::1","latency_time":2151500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:51:35"}
+{"client_ip":"::1","latency_time":1525600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:51:35"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:51:48"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40512.4µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:51:48"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:51:48"}
+{"client_ip":"::1","latency_time":1530100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:51:48"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:51:53"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40517.4µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:51:53"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:51:53"}
+{"client_ip":"::1","latency_time":1539800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:51:53"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:52:08"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:401.0252msSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:52:08"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:52:08"}
+{"client_ip":"::1","latency_time":1096800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:52:08"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:52:16"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40555µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:52:16"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:52:16"}
+{"client_ip":"::1","latency_time":2483800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:52:16"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47110.3µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:52:17"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:52:17"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44512.9µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:52:17"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:52:17"}
+{"client_ip":"::1","latency_time":1125200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:52:17"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.0336msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:52:17"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:52:17"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:4469.9µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:52:17"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:52:17"}
+{"client_ip":"::1","latency_time":2118900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:52:17"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:53:09"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40626.1µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:53:09"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:53:09"}
+{"client_ip":"::1","latency_time":1138400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:53:09"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.3049msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:53:10"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:470sSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:53:10"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:53:10"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:53:10"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44620.5µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:53:10"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:53:10"}
+{"client_ip":"::1","latency_time":2947300,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:53:10"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.6351msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:53:10"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:53:10"}
+{"client_ip":"::1","latency_time":3710100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:53:10"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:54:43"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40503.2µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:54:43"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:54:43"}
+{"client_ip":"::1","latency_time":1444800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:54:43"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:54:54"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:400sSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:54:54"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:54:54"}
+{"client_ip":"::1","latency_time":1009600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:54:54"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47352.6µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:54:56"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:54:56"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502.1µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:54:56"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:54:56"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44546.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:54:56"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:54:56"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:54:56"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:54:56"}
+{"client_ip":"::1","latency_time":2491900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:54:56"}
+{"client_ip":"::1","latency_time":2139300,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:54:56"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40515.8µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:55:27"}
+{"client_ip":"::1","latency_time":2655600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:470sSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47434.6µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44509.6µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:27"}
+{"client_ip":"::1","latency_time":1529400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44517.3µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:27"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:27"}
+{"client_ip":"::1","latency_time":2477200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:27"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:55:31"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40504.6µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:55:31"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:55:31"}
+{"client_ip":"::1","latency_time":2066600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:55:31"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.3697msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:32"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:32"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.2618msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:32"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:32"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44727.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:32"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44557.1µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:32"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:32"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:32"}
+{"client_ip":"::1","latency_time":3662000,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:32"}
+{"client_ip":"::1","latency_time":3050100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:32"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40611.6µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:55:36"}
+{"client_ip":"::1","latency_time":1832500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47715.4µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502.8µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44520µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:36"}
+{"client_ip":"::1","latency_time":2277400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44517.9µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:36"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:36"}
+{"client_ip":"::1","latency_time":2761900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:36"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40760.8µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:55:38"}
+{"client_ip":"::1","latency_time":1941600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:471.551msSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47569.9µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44546.6µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:38"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:55:38"}
+{"client_ip":"::1","latency_time":3179800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:38"}
+{"client_ip":"::1","latency_time":2132400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:55:38"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40807.9µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:56:13"}
+{"client_ip":"::1","latency_time":1971500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47977.9µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47977.9µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44519.6µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:56:13"}
+{"client_ip":"::1","latency_time":2336600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44844.7µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:56:13"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:56:13"}
+{"client_ip":"::1","latency_time":2839900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:56:13"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40601.6µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:57:55"}
+{"client_ip":"::1","latency_time":2201200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47416.3µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47502µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:57:55"}
+{"client_ip":"::1","latency_time":1429400,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:57:55"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:57:55"}
+{"client_ip":"::1","latency_time":1524600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:57:55"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:58:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40348.9µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:58:00"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:58:00"}
+{"client_ip":"::1","latency_time":3062200,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:58:00"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:470sSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:58:01"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47151.9µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:58:01"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:58:01"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:58:01"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44605.8µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:58:01"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:58:01"}
+{"client_ip":"::1","latency_time":2153700,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:58:01"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:441.0185msSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:58:01"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:58:01"}
+{"client_ip":"::1","latency_time":3335500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:58:01"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40669.3µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:58:02"}
+{"client_ip":"::1","latency_time":1761800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47220.5µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:47503µsSELECT * FROM `admin`  WHERE (uid = ? and status = ? and deleted = ?)[1799791942326812672 1 0] 1","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"GetFlowerUserListReq:{\"page\":1,\"page_size\":25}","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:440sSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/UserDao.go:44503.1µsSELECT * FROM `user`  WHERE (uid = ? and deleted = ?) LIMIT 25 OFFSET 0[1799791942326812672 0] 1","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:58:02"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":[{\"uid\":\"1799791942326812672\",\"mobile\":\"138****9322\",\"status\":\"正常\",\"address\":\"北京市北京市东城区\",\"user_name\":\"厉**\",\"exp_time\":\"2024-07-10 22:52:24\"}]}","time":"2024-06-10 23:58:02"}
+{"client_ip":"::1","latency_time":1281600,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:58:02"}
+{"client_ip":"::1","latency_time":1590800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/user/getFlowerUserList","status_code":200,"time":"2024-06-10 23:58:02"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:59:36"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:401.0854msSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:59:36"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:59:36"}
+{"client_ip":"::1","latency_time":3793800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:59:36"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:59:38"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40667µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:59:38"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:59:38"}
+{"client_ip":"::1","latency_time":2109500,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:59:38"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:59:44"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40603.5µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:59:44"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:59:44"}
+{"client_ip":"::1","latency_time":1884100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:59:44"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:59:45"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40631.3µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:59:45"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:59:45"}
+{"client_ip":"::1","latency_time":1819100,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:59:45"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:59:50"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:401.7443msSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:59:50"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:59:50"}
+{"client_ip":"::1","latency_time":2447300,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:59:50"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:59:57"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40589.3µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:59:57"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:59:57"}
+{"client_ip":"::1","latency_time":2194800,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:59:57"}
+{"level":"info","msg":"GetAdminInfoReq:{\"mobile\":\"13868449322\"}","time":"2024-06-10 23:59:59"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/imaotai_helper/imaotai-server/app/dao/AdminDao.go:40626µsSELECT * FROM `admin`  WHERE (mobile = ? and status = ? and deleted = ?)[13868449322 1 0] 1","time":"2024-06-10 23:59:59"}
+{"level":"info","msg":":{\"err_no\":0,\"err_msg\":\"\",\"data\":{\"uid\":\"1799791942326812672\",\"mobile\":\"13868449322\",\"role\":2}}","time":"2024-06-10 23:59:59"}
+{"client_ip":"::1","latency_time":1422900,"level":"info","msg":"","req_method":"POST","req_uri":"/imaotai/getAdminInfo","status_code":200,"time":"2024-06-10 23:59:59"}

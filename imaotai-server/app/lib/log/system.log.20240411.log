@@ -1,0 +1,3 @@
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/zuoxingtao/app/dao/UserDao.go:34504.1µsSELECT * FROM `user`  WHERE (mobile = ?)[13868449322] 1","time":"2024-04-11 22:04:12"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/zuoxingtao/app/dao/UserDao.go:34152.9µsSELECT * FROM `user`  WHERE (mobile = ?)[13868449322] 1","time":"2024-04-11 22:05:34"}
+{"level":"info","msg":"sqlC:/Users/54910/GolandProjects/zuoxingtao/app/dao/UserDao.go:34607.8µsSELECT * FROM `user`  WHERE (mobile = ?)[13868449322] 1","time":"2024-04-11 22:05:55"}

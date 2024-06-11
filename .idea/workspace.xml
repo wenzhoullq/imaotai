@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9bc9e01-c6b6-43a9-8f42-cec787431492" name="Changes" comment="v1.6 修复旅游bug">
+      <change afterPath="$PROJECT_DIR$/imaotai-server/app/api/admin/getAdminInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imaotai-server/app/api/user/deleteFollowerUser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imaotai-server/app/api/user/startFollowerUser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imaotai-server/app/api/user/suspendFollowerUser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zuoxingtao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/imaotai_helper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/user/getUserStatus.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/user/getVerifyCode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/user/logIn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/user/updateAddress.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/user/updateToken.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/constant/constant.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/ItemDao.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/RecordDao.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/ShopDao.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/UserDao.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/config/configuration.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/item/item.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/record/record.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/request/LoginReq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/response/clientResp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/response/userResp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/shop/shop.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/token/token.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dto/user/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/common/common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/common/commonClient.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/cron/cron.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/db/db.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/log/log.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/middleware/cors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/middleware/log.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/init/route/route.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/baiduMapClient.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/baiduMapClient_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/itemClient.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/itemClient_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/shopClient.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/shopClient_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/userClient.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/client/userClient_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/dis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/ip.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/request.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/response.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/time.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/token.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/token_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/utils.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/item/item.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/item/item_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/shop/shop.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/shop/shop_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/user/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/user/user_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/configDev.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/configTest.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/end.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5fc2ae0a-a95c-49db-8c1f-b821a936b4a9" />
+        <option name="url" value="https://github.com/wenzhoullq/imaotai" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2e26bBfq6KtL8x6HjlQZKwIEBBL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/54910/GolandProjects/imaotai_helper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\GoLand 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\config" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app\lib" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app\init\route" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app\dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app\dto\Token" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app\dto\item" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app\init\common" />
+      <recent name="C:\Users\54910\GolandProjects\zuoxingtao\app\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestGetGetXmTravelReward in zuoxingtao/lib/client">
+    <configuration name="TestGetExchangeRateInfo in zuoxingtao/lib/client" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="imaotai_helper" />
+      <working_directory value="$PROJECT_DIR$/app/lib/client" />
+      <root_directory value="$PROJECT_DIR$/app" />
+      <kind value="PACKAGE" />
+      <package value="zuoxingtao/lib/client" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetExchangeRateInfo\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetGetXmTravelReward in zuoxingtao/lib/client" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="imaotai_helper" />
+      <working_directory value="$PROJECT_DIR$/app/lib/client" />
+      <root_directory value="$PROJECT_DIR$/app" />
+      <kind value="PACKAGE" />
+      <package value="zuoxingtao/lib/client" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetGetXmTravelReward\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReceiveReward in zuoxingtao/lib/client" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="imaotai_helper" />
+      <working_directory value="$PROJECT_DIR$/app/lib/client" />
+      <root_directory value="$PROJECT_DIR$/app" />
+      <kind value="PACKAGE" />
+      <package value="zuoxingtao/lib/client" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestReceiveReward\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTravelReward in zuoxingtao/service/user (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="imaotai_helper" />
+      <working_directory value="$PROJECT_DIR$/app/service/user" />
+      <root_directory value="$PROJECT_DIR$/app" />
+      <kind value="PACKAGE" />
+      <package value="zuoxingtao/service/user" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTravelReward\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTravelReward in zuoxingtao/service/user (3)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="imaotai_helper" />
+      <working_directory value="$PROJECT_DIR$/app/service/user" />
+      <root_directory value="$PROJECT_DIR$/app" />
+      <kind value="PACKAGE" />
+      <package value="zuoxingtao/service/user" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTravelReward\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestGetGetXmTravelReward in zuoxingtao/lib/client" />
+        <item itemvalue="Go Test.TestGetExchangeRateInfo in zuoxingtao/lib/client" />
+        <item itemvalue="Go Test.TestTravelReward in zuoxingtao/service/user (3)" />
+        <item itemvalue="Go Test.TestReceiveReward in zuoxingtao/lib/client" />
+        <item itemvalue="Go Test.TestTravelReward in zuoxingtao/service/user (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v1.2" />
+    <MESSAGE value="v1.3" />
+    <MESSAGE value="v1.4" />
+    <MESSAGE value="v1.5 新增旅行;新增接口查看用户状态;仅抢购龙茅" />
+    <MESSAGE value="v1.7 修复别的专场带来错误的中将记录" />
+    <MESSAGE value="v1.6 修复旅游bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.6 修复旅游bug" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

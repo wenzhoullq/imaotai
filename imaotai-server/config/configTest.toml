@@ -1,0 +1,36 @@
+[server_configure]
+server_addr = ":8080"
+
+[baidu_map_configure]
+##百度Map AK
+ak = "IJUlFZgaKZUdUqEVtJSi9XkdrZFr3vKk"
+
+[mysql_configure]
+driver = "mysql"
+user_name = "root"
+## 密码
+pw = "li19980414"
+host = "127.0.0.1"
+port = "3306"
+dbname = "imaotai"
+timeout = "10s"
+
+[log_configure]
+log_file_path = "../log/"
+log_file_name = "system.log"
+
+## 用于过滤想要的商品
+[filter_configure]
+##龙茅
+items_code = ["10942", "10941"]
+## 定时任务时间
+[corn_task_configure]
+update_shop = "0 0 8 * *"
+update_item = "0 10 8 * *"
+ex_user = "0 20 8 * *"
+update_common = "0 30 8 * *"
+reservation = "0 1 9 * *"
+add_record = "0 0 18 * *"
+travel_start = 10
+travel_end = 18
+travel_step = 3

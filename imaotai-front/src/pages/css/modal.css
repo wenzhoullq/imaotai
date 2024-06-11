@@ -1,0 +1,6 @@
+.user-modal .ant-modal-content {
+    height: 200px;
+}
+.ant-modal-content .ant-modal-body {
+    height: 100%;
+}
